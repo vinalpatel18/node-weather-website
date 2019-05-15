@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const hbs = require('hbs')
-const port = process.env.PORT || 3000
+const ports = process.env.PORT || 3000
 
 
 //app.com
@@ -76,6 +76,6 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(port, () => {
+app.listen(ports, () => {
     console.log('Server is up and runnig')
 })
