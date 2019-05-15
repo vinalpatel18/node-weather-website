@@ -27,7 +27,7 @@ weatherForm.addEventListener('submit',(event)=>{
         printweather.textContent = 'Enter city'     
     }
     else{
-        fetch('http://localhost:3000/weather?city='+cityname.value).then((responce)=>{
+        fetch('/weather?city='+cityname.value).then((responce)=>{
         responce.json().then((data)=>{
         console.log(data)
         const weatherdetails = {
