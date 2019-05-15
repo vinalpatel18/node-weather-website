@@ -1,18 +1,5 @@
 console.log('Client side JS');
 
-// fetch('http://puzzle.mead.io/puzzle').then((responce)=>{
-//     console.log(responce.json().then((data)=>{
-//         console.log(data)
-//     }))
-// })
-
-// fetch('http://localhost:3000/weather?city=asdasdasdsdasdasdasdasdadasdasdsad').then((responce)=>{
-//     responce.json().then((data)=>{
-//         console.log(data)
-//     })
-// })
-
-
 const weatherForm = document.querySelector('form')
 const cityname = document.querySelector('input')
 const printweather = document.querySelector('#result')
