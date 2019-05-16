@@ -2,7 +2,7 @@
 const request = require('request');
 
 const forecast_callback = (lati, long, location, callback) => {
-    const forecast_url = 'https://api.darksky.net/forecast/429c70751b42a967ffd3c01a3f1cf83e/' + lati + ',' + long;
+    const forecast_url = 'https://api.darksky.net/forecast/429c70751b42a967ffd3c01a3f1cf83e/' + lati + ',' + long+'?units=si';
 
     request({ url: forecast_url, json: true }, (error, response) => {
 
